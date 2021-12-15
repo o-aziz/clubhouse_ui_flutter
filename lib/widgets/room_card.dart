@@ -53,7 +53,7 @@ class RoomCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
-                      child: Container(
+                      child: SizedBox(
                         height: 100.0,
                         child: Stack(
                           children: [

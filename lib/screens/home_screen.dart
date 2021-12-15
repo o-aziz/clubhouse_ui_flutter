@@ -4,6 +4,8 @@ import 'package:clubhouse_ui/data.dart';
 import 'package:clubhouse_ui/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +56,7 @@ class HomeScreen extends StatelessWidget {
           ListView(
             padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 120.0),
             children: [
-              UpcomingRooms(upcomingRooms: upcomingRoomsList),
+              const UpcomingRooms(upcomingRooms: upcomingRoomsList),
               const SizedBox(height: 12.0),
               ...roomsList.map((e) => RoomCard(room: e)),
             ],
